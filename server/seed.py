@@ -39,3 +39,7 @@ with app.app_context():
     db.session.commit()
 
     print("Seeding done!")
+    print("Restaurants in DB:", Restaurant.query.all())
+    print("Pizzas in DB:", Pizza.query.all())
+    print("RestaurantPizzas in DB:", RestaurantPizza.query.all())
+
